@@ -1,6 +1,7 @@
 
 import '../assets/CSS/layout.css';
-
+import flowers from './FlowerDB';
+import Product from './Product';
 
 export default function Products(){
    
@@ -14,6 +15,7 @@ export default function Products(){
                 <div className="grid-container">
                     {
                         //product
+                        flowers.map((flower)=>(<Product data={flower}/>))
                     }
                 </div>
 
